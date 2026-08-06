@@ -9,3 +9,6 @@
 
 # Disable Windows Logon Screen Wallpaper
 & reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background" /v "HideLogonBackgroundImage" /t REG_DWORD /d 1 /f 
+
+# Enable Windows Borders
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\DWM" -Name ColorPrevalence -Value 1 -Type DWord
