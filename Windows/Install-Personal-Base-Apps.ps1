@@ -20,7 +20,8 @@ $Packages = @(
     @{ Name = "Python 3";               Id = "Python.Python.3.13" }
     @{ Name = "Tailscale";              Id = "Tailscale.Tailscale" }
     @{ Name = "VLC Media Player";       Id = "VideoLAN.VLC" }
-    @{ Name = "VMware Remote Console";  Id = "VMware.VMwareRemoteConsole" }
+    @{ Name = "VMware Remote Console";  Id = "VMware.VMwareRemoteConsole" 
+    @{ Name = "WinSCP"; Id = "WinSCP.WinSCP" }
 )
 
 $LogPath = Join-Path $env:TEMP "WingetInstall-$(Get-Date -Format 'yyyyMMdd-HHmmss').csv"
